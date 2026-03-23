@@ -6,39 +6,39 @@
 <title>Ritish Pavan Kumar | AI Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#030712;--card:#0b1120;--accent:#38bdf8;--accent-glow:rgba(56,189,248,0.3);--text:#f3f4f6;--muted:#94a3b8;--border:rgba(255,255,255,0.1)}
+:root{--bg:#030712;--card:#0b1120;--accent:#38bdf8;--accent-glow:rgba(56,189,248,0.3);--text:#f3f4f6;--muted:#94a3b8;--border:rgba(255,255,255,0.1);--max-width:1400px}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',sans-serif;background-color:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
 .noise{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;opacity:0.05;z-index:9999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")}
-.container{max-width:900px;margin:0 auto;padding:60px 24px}
+.container{max-width:var(--max-width);margin:0 auto;padding:40px 40px}
 header{display:flex;justify-content:space-between;align-items:center;margin-bottom:80px}
-.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:-0.02em;background:linear-gradient(to right,#38bdf8,#818cf8);-webkit-background-clip:text;background-clip:text;color:transparent}
-nav{display:flex;gap:32px}
+.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;letter-spacing:-0.02em;background:linear-gradient(to right,#38bdf8,#818cf8);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{display:flex;gap:40px}
 nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;transition:color 0.2s}
 nav a:hover{color:var(--text)}
-.hero{margin-bottom:100px}
+.layout-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+@media(max-width:1024px){.layout-grid{grid-template-columns:1fr;gap:80px}}
+.left-sticky{position:sticky;top:40px}
+@media(max-width:1024px){.left-sticky{position:static}}
 .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.2);border-radius:100px;color:var(--accent);font-size:12px;font-weight:600;margin-bottom:24px}
-.hero-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(40px,8vw,72px);font-weight:700;line-height:0.9;letter-spacing:-0.04em;margin-bottom:24px;text-transform:uppercase;font-style:italic}
+.hero-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(48px,6vw,96px);font-weight:700;line-height:0.85;letter-spacing:-0.04em;margin-bottom:32px;text-transform:uppercase;font-style:italic}
 .hero-title span{display:block;background:linear-gradient(to bottom right,#fff,#94a3b8);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero-desc{font-size:18px;color:var(--muted);max-width:540px;margin-bottom:32px}
-section{margin-bottom:100px}
-.section-head{display:flex;align-items:center;gap:16px;margin-bottom:40px}
+.hero-desc{font-size:20px;color:var(--muted);max-width:480px;margin-bottom:48px}
+.section-head{display:flex;align-items:center;gap:16px;margin-bottom:32px}
 .section-head h2{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted)}
 .section-head .line{flex:1;height:1px;background:var(--border)}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-@media(max-width:640px){.grid{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:32px;transition:all 0.3s cubic-bezier(0.4,0,0.2,1);position:relative;overflow:hidden;text-decoration:none;display:block}
+.card{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:40px;transition:all 0.3s cubic-bezier(0.4,0,0.2,1);position:relative;overflow:hidden;text-decoration:none;display:block;margin-bottom:24px}
 .card:hover{border-color:rgba(56,189,248,0.4);transform:translateY(-4px);box-shadow:0 20px 40px -10px rgba(0,0,0,0.5),0 0 20px var(--accent-glow)}
-.card h3{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:600;margin-bottom:12px;color:#fff}
-.card p{font-size:14px;color:var(--muted);margin-bottom:20px}
+.card h3{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;margin-bottom:12px;color:#fff}
+.card p{font-size:15px;color:var(--muted);margin-bottom:24px}
 .tags{display:flex;gap:8px;flex-wrap:wrap}
 .tag{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;padding:4px 10px;background:rgba(255,255,255,0.05);border-radius:6px;color:var(--muted)}
-.thinking-card{background:linear-gradient(to bottom right,var(--card),#030712);border:1px solid var(--border);border-radius:24px;padding:40px}
+.thinking-card{background:linear-gradient(to bottom right,var(--card),#030712);border:1px solid var(--border);border-radius:24px;padding:40px;margin-bottom:24px}
 .thinking-card p{font-size:16px;color:#cbd5e1;margin-bottom:24px}
-.contact-footer{display:flex;justify-content:space-between;align-items:flex-end;padding-top:60px;border-top:1px solid var(--border)}
 .contact-info h4{font-size:14px;color:var(--muted);margin-bottom:8px}
-.contact-info .email{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:600;color:#fff;text-decoration:none}
-.social-links{display:flex;gap:20px}
+.contact-info .email{font-family:'Space Grotesk',sans-serif;font-size:32px;font-weight:600;color:#fff;text-decoration:none;transition:color 0.2s}
+.contact-info .email:hover{color:var(--accent)}
+.social-links{display:flex;gap:32px;margin-top:24px}
 .social-links a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;transition:color 0.2s}
 .social-links a:hover{color:var(--accent)}
 </style>
@@ -51,42 +51,49 @@ section{margin-bottom:100px}
 <nav>
 <a href="#projects">Work</a>
 <a href="#thinking">Thinking</a>
-<a href="#contact">Contact</a>
+<a href="mailto:ritishpavankumar@gmail.com">Contact</a>
 </nav>
 </header>
-<main>
-<div class="hero">
-<div class="pill">Actively seeking AI Research roles</div>
+<div class="layout-grid">
+<div class="left-sticky">
+<div class="pill">AI Research & Systems Operations</div>
 <h1 class="hero-title">
 <span>I think in</span>
 <span style="color:var(--accent);background:none;-webkit-text-fill-color:var(--accent)">systems.</span>
 </h1>
-<p class="hero-desc">Recent CS graduate focused on AI operations and systems thinking. Building minimal, high-leverage tools that solve real problems.</p>
+<p class="hero-desc">Recent CS graduate building high-leverage tools. I focus on the feedback loops and constraints that make AI useful in the real world.</p>
+<div class="contact-info">
+<h4>Let's build.</h4>
+<a href="mailto:ritishpavankumar@gmail.com" class="email">ritishpavankumar@gmail.com</a>
+<div class="social-links">
+<a href="https://www.linkedin.com/in/ritishpavankumar" target="_blank">LinkedIn</a>
+<a href="https://github.com/ritishpavankumar" target="_blank">GitHub</a>
 </div>
+</div>
+</div>
+<div class="right-content">
 <section id="projects">
 <div class="section-head">
 <h2>Selected Projects</h2>
 <div class="line"></div>
 </div>
-<div class="grid">
 <a href="https://idea-path-3c8193a4.base44.app" class="card" target="_blank">
 <h3>IdeaPath</h3>
-<p>AI-based systems thinking app that converts messy thoughts into structured, actionable paths.</p>
+<p>AI-based systems thinking app that converts messy thoughts into structured, actionable paths. Built to solve the problem of fragmented planning.</p>
 <div class="tags">
 <span class="tag">AI</span>
 <span class="tag">No-Code</span>
-<span class="tag">Systems</span>
+<span class="tag">Product</span>
 </div>
 </a>
 <a href="#" class="card">
 <h3>AI Portfolio</h3>
-<p>A high-performance, minimal portfolio built to showcase technical clarity and systems focus.</p>
+<p>A high-performance, wide-layout portfolio built to showcase technical clarity. Designed for readability and systems focus.</p>
 <div class="tags">
 <span class="tag">Design</span>
-<span class="tag">Structure</span>
+<span class="tag">Engineering</span>
 </div>
 </a>
-</div>
 </section>
 <section id="thinking">
 <div class="section-head">
@@ -97,18 +104,13 @@ section{margin-bottom:100px}
 <p>I don't ask "What tool should I use?" I ask "What is the smallest system that reliably solves this problem over time?"</p>
 <p>AI is a powerful component, but it's only as good as the system around it. My focus is on designing the feedback loops and constraints that make AI useful.</p>
 </div>
+<div class="thinking-card" style="background:rgba(56,189,248,0.03);border-color:rgba(56,189,248,0.1)">
+<p style="color:var(--accent);font-weight:600;margin-bottom:12px">Current Focus</p>
+<p style="margin-bottom:0">I'm currently exploring LLM evaluation frameworks and AI operations—learning how to scale small prototypes into durable production systems.</p>
+</div>
 </section>
-</main>
-<footer id="contact" class="contact-footer">
-<div class="contact-info">
-<h4>Let's build.</h4>
-<a href="mailto:ritishpavankumar@gmail.com" class="email">ritishpavankumar@gmail.com</a>
 </div>
-<div class="social-links">
-<a href="https://www.linkedin.com/in/ritishpavankumar" target="_blank">LinkedIn</a>
-<a href="https://github.com/ritishpavankumar" target="_blank">GitHub</a>
 </div>
-</footer>
 </div>
 </body>
 </html>
