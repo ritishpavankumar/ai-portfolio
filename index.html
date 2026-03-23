@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ritish Pavan Kumar | AI Portfolio</title>
+<meta name="description" content="AI-focused portfolio of Ritish Pavan Kumar"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050816;--card:#020617;--accent:#38bdf8;--text:#e5e7eb;--muted:#9ca3af;--max-width:1000px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:radial-gradient(circle at top,#0f172a 0,#020617 45%,#000 100%);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+.page{max-width:var(--max-width);margin:0 auto;padding:32px 20px 40px;position:relative;z-index:1}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:38px;height:38px;border-radius:14px;background:conic-gradient(from 180deg,#38bdf8,#a855f7,#22c55e,#38bdf8);display:flex;align-items:center;justify-content:center}
+.logo-inner{width:30px;height:30px;border-radius:11px;background:#0f172a;color:#e5e7eb;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.brand-text .name{font-size:16px;font-weight:600}
+.brand-text .tagline{font-size:12px;color:var(--muted)}
+nav{display:flex;gap:10px;font-size:13px}
+nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:999px;transition:all .18s}
+nav a:hover{color:var(--text);background:#0f172a}
+.pill{display:inline-flex;gap:8px;padding:6px 12px;border-radius:999px;border:1px solid rgba(148,163,184,0.35);background:rgba(56,189,248,0.16);color:var(--muted);font-size:12px;margin-bottom:14px}
+.pill-dot{width:7px;height:7px;border-radius:999px;background:#4ade80;box-shadow:0 0 0 6px rgba(34,197,94,0.16)}
+.hero{background:#0f172a;border-radius:24px;padding:18px;margin-bottom:26px}
+.hero-title{font-size:32px;font-weight:800;font-style:italic;text-transform:uppercase;letter-spacing:0.18em;margin-bottom:10px;background:linear-gradient(120deg,#e5e7eb,#38bdf8,#a855f7);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-subtitle{font-size:14px;color:var(--muted);margin-bottom:16px}
+section{background:var(--card);border-radius:22px;border:1px solid #0f172a;padding:16px;margin-bottom:18px}
+.section-title{font-size:14px;text-transform:uppercase;letter-spacing:0.16em;color:var(--muted);margin-bottom:10px}
+.project-card{border-radius:15px;border:1px solid #1f2937;background:#020617;padding:10px;margin-top:10px}
+.project-title{font-size:13px;font-weight:500;color:var(--text);margin-bottom:4px}
+.project-desc{font-size:12px;color:#cbd5f5;margin-bottom:6px}
+.project-link{font-size:11px;color:var(--accent);text-decoration:none}
+.project-link:hover{text-decoration:underline}
+.contact{display:flex;justify-content:space-between;align-items:center;padding:10px 12px}
+.btn{padding:7px 11px;border-radius:999px;font-size:12px;text-decoration:none;display:inline-flex;transition:all .18s}
+.btn-primary{background:linear-gradient(135deg,#0ea5e9,#38bdf8);color:#020617;font-weight:500}
+.btn-ghost{background:#111827;border:1px solid rgba(148,163,184,0.6);color:var(--text)}
+.footer{margin-top:18px;font-size:11px;color:#6b7280;text-align:right}
+@media(max-width:820px){header{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+<div class="brand">
+<div class="logo"><div class="logo-inner">RP</div></div>
+<div class="brand-text">
+<div class="name">Ritish Pavan Kumar</div>
+<div class="tagline">AI-focused graduate</div>
+</div>
+</div>
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#thinking">Thinking</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<div class="pill"><span class="pill-dot"></span><span>Actively seeking AI research & AI operations opportunities</span></div>
+<div class="hero" id="about">
+<h1 class="hero-title">I think in systems.</h1>
+<p class="hero-subtitle">I'm a recent Computer Science graduate who builds calm, minimal systems that use AI to solve real problems. My work is about <strong>linking ideas, tools, and workflows</strong> into coherent systems.</p>
+</div>
+<section id="projects">
+<h2 class="section-title">AI Projects</h2>
+<div class="project-card">
+<div class="project-title">IdeaPath — AI-Based Systems Thinking App</div>
+<p class="project-desc">An AI-based open-source web app I built without traditional coding. It turns messy ideas into structured paths so you can see how goals, actions, and constraints connect as a system.</p>
+<a class="project-link" href="https://idea-path-3c8193a4.base44.app" target="_blank">Open IdeaPath →</a>
+</div>
+<div class="project-card">
+<div class="project-title">This Website — Calm AI Portfolio</div>
+<p class="project-desc">I rebuilt my portfolio from scratch with a calm, minimal, systems-thinking tone. Simple structure: About, Projects, Thinking, Contact.</p>
+<a class="project-link" href="https://ritishpavankumar.github.io" target="_blank">View portfolio →</a>
+</div>
+</section>
+<section id="thinking">
+<h2 class="section-title">Thinking</h2>
+<p style="font-size:13px;color:#d1d5db;margin-bottom:8px">I try to think in systems: instead of asking "What tool should I use?", I ask "What is the smallest system that would reliably solve this problem over time?" AI is one component in that system, not the entire answer.</p>
+<p style="font-size:13px;color:#d1d5db">That's why my projects focus on workflows, constraints, and feedback loops. Whether it's IdeaPath, this website, or future AI experiments, the goal is: build things that stay useful.</p>
+</section>
+<section id="contact" class="contact">
+<div>
+<div style="font-size:11px;text-transform:uppercase;color:#6b7280">Contact</div>
+<div style="font-size:13px;color:var(--text);margin-top:2px">ritishpavankumar@gmail.com</div>
+</div>
+<div style="display:flex;gap:6px;flex-wrap:wrap">
+<a href="mailto:ritishpavankumar@gmail.com" class="btn btn-primary">Email</a>
+<a href="https://www.linkedin.com/in/ritishpavankumar" target="_blank" class="btn btn-ghost">LinkedIn</a>
+<a href="https://github.com/ritishpavankumar" target="_blank" class="btn btn-ghost">GitHub</a>
+</div>
+</section>
+<div class="footer">Built by <strong>Ritish</strong> in public.</div>
+</div>
+</body>
+</html>
